@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Demo ｜word-cat.com</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Demo gridImageTransition.js is jQuery plugin">
+<meta name="keywords" content="gridImageTransition,jQuery,plugin">
+<link rel="shortcut icon" href="../../common/img/ico/favicon.ico">
+    
+    <link href="../css/default.css" rel="stylesheet">
+    <link href="../css/module.css" rel="stylesheet">
+    <link href="../js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+    
+	<link href="../css/styles.css" rel="stylesheet">
+
+
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if IE 6]><script type="text/javascript" src="common/js/DD_belatedPNG-min.js"></script><script type="text/javascript">DD_belatedPNG.fix('.png');</script><![endif]-->
+
+<style>
+	.grid-wrap{
+		height:450px;
+	    width:1050px;
+		margin: 0 auto;
+		box-shadow: 0 0 20px #333;
+		overflow:hidden;
+	}
+	
+	#grid-sample{
+		 height:450px;
+		 overflow:hidden;
+		 } 
+
+	#grid-sample div.instagram-placeholder{
+		width:150px;
+		height:150px;
+		float:left;
+		overflow:hidden;
+		position:relative;
+		display:list-item;
+		text-align:center;
+		}
+ 
+ </style>
+　
+</head>
+
+<body>
+<div id="page">
+
+    <header>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <h1>gridImageTransition.js</h1>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="#demo">demo</a></li>
+              <li><a href="#download">download</a></li>
+              <li><a href="#usage">usage</a></li>
+              <li><a href="#options">options</a></li>
+            
+            </ul>
+        
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    </header>
+    
+
+<div id="container" class="container">
+
+<div id="contents">
+
+<h2 class="ttl">gridImageTransition.js</h2>
+
+
+<article id="demo">
+
+<h2 class="ttl">demo</h2>
+
+<div class="grid-wrap">
+<div id="grid-sample"><!-- / #grid-sample --></div>
+<!-- / .grid-wrap --></div>
+ 
+<!-- #demo --></article>
+
+
+<article id="download">
+
+<h2 class="ttl">download</h2>
+
+<table class="table table-striped table-bordered table-condensed">
+			<thead>
+				<tr>
+					<th>source</th>
+					<th>zip</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="txtC"><a href="http://word-cat.com/demo/gridImageTransition/js/jquery.gridImageTransition.min.js" target="_blank" class="btn btn-primary"><i class="icon-download icon-white"></i> jquery.gridImageTransition.min.js</a></td>
+					<td class="txtC"><a href="http://word-cat.com/download/gridImageTransition.zip" target="_blank" class="btn btn-primary"><i class="icon-folder-open icon-white"></i> gridImageTransition.zip</a></td>
+				</tr>
+	
+			</tbody>
+		</table>
+
+<!-- #download --></article>
+
+<article id="usage">
+
+<h2 class="ttl">usage</h2>
+
+<table class="table table-striped table-bordered table-condensed">
+			<thead>
+				<tr>
+					<th>Necessary to include　<small>使用にはこのプラグインが必要です。</small></th>
+					<th>Plugin URL <small>下記URLへジャンプし、プラグインを取得してください。</small></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="txtC">jQuery Transit.js</td>
+					<td class="txtC"><a href="http://ricostacruz.com/jquery.transit/" target="_blank" class="btn btn-info"><i class="icon-ok icon-white"></i> jQuery.transit.js</a></td>
+				</tr>
+	
+			</tbody>
+		</table>
+
+
+<code class="label label-success">script</code>
+<pre class="prettyprint linenums">
+&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.transit.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.gridImageTransition.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt; 
+ (function($){
+	$(function(){
+ 		$(&quot;#grid&quot;).gridImageTransition();
+ 	});
+ })(jQuery);
+&lt;/script&gt;</pre>
+
+
+<code class="label label-info">html</code>
+<pre class="prettyprint linenums">
+&lt;div id=&quot;grid-wrap&quot;&gt;
+&lt;div id=&quot;grid&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;img src=&quot;img/01.jpg&quot; alt=&quot;img01&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;img/02.jpg&quot; alt=&quot;img02&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;img/03.jpg&quot; alt=&quot;img03&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;img/04.jpg&quot; alt=&quot;img04&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;img/05.jpg&quot; alt=&quot;img05&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;img/06.jpg&quot; alt=&quot;img06&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;img/07.jpg&quot; alt=&quot;img07&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;img/08.jpg&quot; alt=&quot;img08&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;img/09.jpg&quot; alt=&quot;img09&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;img/10.jpg&quot; alt=&quot;img10&quot;&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img src=&quot;img/11.jpg&quot; alt=&quot;img11&quot;&gt;&lt;/li&gt;
+		・
+		・
+		・
+&lt;/ul&gt;
+&lt;!-- / #grid --&gt;&lt;/div&gt;
+&lt;!-- / #grid-wrap --&gt;&lt;/div&gt;
+</pre>
+
+<code class="label label-warning">styles</code>
+<pre class="prettyprint linenums">
+&lt;style&gt;
+#grid-wrap{
+height:450px;
+width:1050px;
+margin: 0 auto;
+box-shadow: 0 0 20px #333;
+overflow:hidden;
+}
+
+#grid{
+ height:450px;
+ overflow:hidden;
+ } 
+ 
+#grid li{
+width:150px;
+height:150px;
+float:left;
+overflow:hidden;
+position:relative;
+display:list-item;
+text-align:center;
+}
+&lt;/style&gt;
+</pre>
+
+
+<!-- #usage --></article>
+
+<article id="options">
+<h2 class="ttl">options</h2>
+
+<code class="label label-important">default options</code>
+<pre class="prettyprint linenums">
+element : "li",
+speed   : 900,
+easeIn  : "swing",
+easeOut  : "swing",
+duration: 1000,
+maxImage: 16,
+animate: "random",
+postion: "random" ,
+loading: "img/loading.gif" 
+</pre>
+
+<table class="table table-striped table-bordered table-condensed">
+			<thead>
+				<tr>
+					<th>Option name</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><code>element</code></td>
+					<td>Float element. 画像をネストする要素を指定します。</td>
+				</tr>
+                
+                <tr>
+					<td><code>speed</code></td>
+					<td>Animation speed.　アニメーションスピードを指定します。</td>
+				</tr>
+                
+                <tr>
+					<td><code>easeIn &amp; easeOut</code></td>
+					<td>Easing animation.　イージングを指定します。</td>
+				</tr>
+                
+                <tr>
+					<td><code>duration</code></td>
+					<td>Interval speed.  アニメーション間隔を指定します。</td>
+				</tr>
+                
+                <tr>
+					<td><code>maxImage</code></td>
+					<td>The max of the picture which carries out animation.  アニメーションさせる画像の最大値。</td>
+				</tr>
+                
+                <tr>
+					<td><code>animate</code></td>
+					<td>The type of animation has <code>random</code> <code>fade</code> <code>slide</code> <code>matrix</code> <code>turned</code>.    アニメーションの種類は<code>random</code> <code>fade</code> <code>slide</code> <code>matrix</code> <code>turned</code>です。</td>
+				</tr>
+                
+                <tr>
+					<td><code>postion</code></td>
+					<td>It can specify, only when animate is slide. <code>left</code> <code>right</code> <code>top</code> <code>bottom</code> <code>leftTop</code> <code>rightTop</code> <code>leftBottom</code> <code>rightBottom</code><br>
+                    アニメーションのを「slide」にした時のみ指定できます。<code>left</code> <code>right</code> <code>top</code> <code>bottom</code> <code>leftTop</code> <code>rightTop</code> <code>leftBottom</code> <code>rightBottom</code></td>
+				</tr>
+                
+                <tr>
+					<td><code>loading</code></td>
+					<td>The path of a loading picture is specified.　ローディング画像のパスを指定します。</td>
+				</tr>
+	
+			</tbody>
+		</table>
+
+<!-- #options --></article>
+
+
+<!-- / #contents .container --></div>
+
+<footer id="footer">
+
+
+<div class="inner">
+
+
+<p id="copyright">&copy; <a href="http://word-cat.com" target="_blank">word-cat.com</a></p>
+
+<!-- / footer --></div>
+</footer>
+<!-- / #container --></div>
+<!-- / #page --></div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../js/google-code-prettify/prettify.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/common.js"></script>
+
+<script>prettyPrint();</script>
+<!---------------------------------------------------
+     scripts         
+----------------------------------------------------->
+<script type="text/javascript" src="js/jquery-instagram.js" charset="UTF-8"></script>
+<script src="js/jquery.transit.min.js"></script>
+<script src="js/jquery.gridImageTransition.js"></script>
+
+<script charset="UTF-8">
+(function($){
+  
+  $(function(){
+	$("#grid-sample").instagram({ hash: '猫', show: 50, clientId: '3d05cd063dcd4a7d95b941950d02131b' ,onComplete: function(){
+		$('#grid-sample div.instagram-placeholder img').height(150).width(150);
+ 		$("#grid-sample").gridImageTransition({
+			 element : ".instagram-placeholder",
+			 speed   : 900,
+			 easeIn  : "swing",
+			 easeOut  : "swing",
+			 duration: 1500,
+			 maxImage: 21,
+			 animate: "random",
+			 postion: "random" ,
+			 loading: "img/loading.gif" });
+		}
+	});
+
+     
+   });
+
+   })(jQuery);
+
+</script>
+</body>
+</html>
